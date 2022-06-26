@@ -72,3 +72,20 @@ h1, h2{
 .delete:hover{
     background: rgb(221, 21, 21);
 }
+#add-activity{
+    width: 400px;
+    margin: 0 auto;
+}
+
+#add-activity input{
+    display: block;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #020202;
+    font-size: 16px;
+    border-radius: 4px 0 0 4px;
+    box-sizing: border-box;
+    width: 300px;
+    float: left;
+    clear: both;
+}
