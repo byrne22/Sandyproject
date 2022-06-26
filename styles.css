@@ -60,3 +60,15 @@ h1, h2{
 #activity-list li:hover{
     border-color: #f60707;
 }
+.delete{
+    float: right;
+    background: #e90d41;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+
+.delete:hover{
+    background: rgb(221, 21, 21);
+}
