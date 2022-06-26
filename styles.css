@@ -19,3 +19,15 @@ h1, h2{
     background-color: #F1E6AC;
 
 }
+
+#page-banner{
+    background: #030da0 ;
+    padding: 10px 0;
+
+}
+
+#page-banner h1, #page-banner p{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
