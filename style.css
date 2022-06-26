@@ -8,3 +8,8 @@
     border-radius: 7px;
     
   }
+  .main-header {
+    text-align:start;
+    margin-bottom: 40px;
+    padding-left: 40px;
+  }
