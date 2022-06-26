@@ -89,3 +89,31 @@ h1, h2{
     float: left;
     clear: both;
 }
+#add-activity button{
+    border: 1px solid #e90d41;
+    background: #e90d41;
+    padding: 10px 20px;
+    font-size: 16px;
+    display: inline-block;
+    margin: 0;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    width: 100px;
+    margin: 20px 0;
+    border-left: 0;
+    color: white;
+}
+
+#add-activity:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#add-activity #hide{
+  width: 30px;
+}
+
+#add-activity label{
+  line-height: 52px;
+}
