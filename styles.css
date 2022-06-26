@@ -42,3 +42,21 @@ h1, h2{
     font-size: 16px;
     color: #e90d41;
 }
+#book-list, #add-activity, #tabbed-content{
+    margin: 30px;
+}
+
+#activity-list ul, #tabbed-content ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+#activity-list li{
+    padding: 20px;
+    border-left: 5px solid #ddd;
+    margin: 20px 10px;
+}
+
+#activity-list li:hover{
+    border-color: #f60707;
+}
