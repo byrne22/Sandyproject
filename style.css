@@ -40,3 +40,8 @@
     border-color: #0069d9;
     cursor: pointer;
   }
+  .main-result-block { text-align: center; }
+  .pos { color: green; }
+  .neg { color: darkred; }
+  .neutral { color: gray }
+  .invisible { display: none; }
