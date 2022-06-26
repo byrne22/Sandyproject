@@ -51,9 +51,34 @@
             </li>
         </ul>
     </div>
+    <!--create add activity form-->
     <form id="add-activity">
         <input type="checkbox" id="hide" />
         <label for="hide">Hide Activities</label>
 	    	<input type="text" placeholder="Add an activity..." />
 	    	<button>Add</button>
 	    </form>
+        <!--Add text analyzer html-->
+	<div class="main">
+		<div><h2 class="main-header">How was your day?</h2>
+	     </div>
+		
+		<section class="main-input-comment">
+			<label for="comment">Write your comment here:</label>
+			<textarea
+					name="comment"
+					id="comment"
+					class="main-comment-area"
+					placeholder="Your comment..."
+			>
+			</textarea>
+			<button class="main-analyze-button" onclick="onAnalyzeButtonClick()">Analyze...</button>
+		</section>
+		<section class="main-result">
+			<p id="main-result-block" class="main-result-block invisible">
+				<span>Result:</span>
+				<span id="result"></span>
+			</p>
+			<!--<button class="main-analyze-button" onclick="onAnalyzeButtonClick()">Analyze...</button>-->
+		</section>
+	</div>
