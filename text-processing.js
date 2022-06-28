@@ -61,10 +61,10 @@ const displayResult = result => {
   // Choosing the result text depending on response label
   switch (label) {
       case 'pos':
-          resultText = 'Wow! Your day was very good! =)';
+          resultText = 'Wow! Congratulations you deserve to celebrate🎉🎊 ';
           break;
       case 'neg':
-          resultText = 'Its one of those days huh...call mum';
+          resultText = 'Still okay...lessons huh...need cofffee☕☕';
           break;
       case 'neutral':
           resultText = 'Simple comment =)';

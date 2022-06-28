@@ -16,6 +16,7 @@
   .main-input-comment { margin-bottom: 20px; }
   .main-comment-area {
     width: 100%;
+    height: fit-content;
     border: #ced4da 1px solid;
     border-radius: 10px;
     resize: none;
