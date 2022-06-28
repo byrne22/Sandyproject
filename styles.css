@@ -134,7 +134,8 @@ h1, h2{
 }
 
 #tabbed-content .panel.active{
-    display: block;
+    display: flex;
+    place-content: center;
 }
 #footer{
     align-content:flex-end;
