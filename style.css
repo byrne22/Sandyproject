@@ -1,48 +1,148 @@
-.main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 10px;
-    width: 98%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    border-radius: 7px;
-    
-  }
-  .main-header {
-    text-align:start;
-    margin-bottom: 40px;
-    padding-left: 40px;
-  }
-  .main-input-comment { margin-bottom: 20px; }
-  .main-comment-area {
-    width: 100%;
-    height: fit-content;
-    border: #ced4da 1px solid;
-    border-radius: 10px;
-    resize: none;
-    padding: 10px;
-    margin-bottom: 20px;
-    font-size: 14px;
-  }
-  .main-analyze-button {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #e90d41;
-    background-color: #e90d41;
-    border-radius: 7px;
+body{
+    font-family: Verdana;
     color: white;
+    letter-spacing: 1px;
+}
+h1, h2{
+    font-weight: normal;
+}
+
+#wrapper{
+    width: 100%;
+    max-width: 1400px;
+    margin: 20px auto;
+    border-radius: 6px;
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    padding: 0 0 20px;
+    overflow: hidden;
+    border: 1px solid #f60707;
+}
+#page-banner{
+    background: hsl(0, 84%, 42%) ;
+    padding: 10px 0;
+
+}
+#page-banner h1, #page-banner p{
+    width: 100%;
     text-align: center;
-    font-size: 14px;
-    outline: none;
-  }
-  .main-analyze-button::-moz-focus-inner {border: 0;}
-  .main-analyze-button:hover {
-    background-color: #0069d9;
-    border-color: #0069d9;
+    margin: 10px 0;
+}
+#page-banner input{
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+    padding: 8px;
+    border: 1px solid #e90d41;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #e90d41;
+}
+#book-list, #add-book, #tabbed-content{
+    margin: 30px;
+}
+
+#book-list ul, #tabbed-content ul{
+    list-style-type: none;
+    padding: 0;
+    
+
+}
+
+#book-list li{
+    padding: 20px;
+    border-left: 7px solid white;
+    margin: 20px 10px;
+    font-size: 25px;
+    
+}
+
+#book-list li:hover{
+    border-color: #f60707;
+}
+.delete{
+    float: right;
+    background: #f60707;
+    padding: 10px;
+    border-radius: 4px;
     cursor: pointer;
-  }
-  .main-result-block { text-align: center; }
-  .pos { color: green; }
-  .neg { color: darkred; }
-  .neutral { color: gray }
-  .invisible { display: none; }
+    color: white;
+    font-size: 20px;
+}
+
+.delete:hover{
+    background: rgb(221, 21, 21);
+}
+#add-book{
+    width: 400px;
+    margin: 0 auto;
+    font-size: 15px;
+    border-radius: 2px;
+    color: #f60707;
+}
+
+#add-book input{
+    display: block;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #020202;
+    font-size: 16px;
+    border-radius: 4px 0 0 4px;
+    box-sizing: border-box;
+    width: 400px;
+    float: left;
+    clear: both;
+}
+
+#add-book button{
+    border: 1px solid #e90d41;
+    background: #f60707;
+    padding: 10px 20px;
+    font-size: 16px;
+    display: inline-block;
+    margin: 0;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    width: 100px;
+    margin: 20px 0;
+    border-left: 0;
+    color: white;
+}
+
+#add-book:after{
+    content: '';
+    display: block;
+    clear: both;
+    font-size: 15px;
+}
+
+#add-book #hide{
+  width: 30px;
+  font-size: 16px;
+  color: #e90d41;
+}
+
+#add-book label{
+  line-height: 52px;
+}
+
+#tabbed-content li{
+    display: inline-block;
+    padding: 10px 14px;
+    background: #e90d41;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#tabbed-content .panel{
+    display: none;
+    border: 1px solid #e90d41;
+    padding: 0 10px;
+    border-radius: 4px;
+}
+
+#tabbed-content .panel.active{
+    display: block;
+}

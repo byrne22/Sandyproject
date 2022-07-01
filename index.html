@@ -1,110 +1,80 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <link href="styles.css" rel="stylesheet" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
     <script src="index.js"></script>
-	<!-- Import axios library -->
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<!-- Querystring library -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.7.0/qs.min.js"></script>
-<!-- Import our javascript file -->
-<script src="text-processing.js"></script>
-<link rel="stylesheet" href="style.css">
-
-    <title>my personal secretary</title>
+	<!--Add links for the book search button-->
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Slackey&family=Roboto:wght@100;300;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/public/css/styles.css"/>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+	<script type="text/javascript" src="/public/js/index.js"></script>
+    <title>book junki project</title>
 </head>
 <body>
+	
     <div id="wrapper">
-      <header>
-          <div id="page-banner">
-              <h1 class="title">Dear Sandy <br>my personal Journal</h1>
-        <p>Search for Activities</p>
-        <form id="search-activity">
-          <input type="text" placeholder="Search Activities..." />
-        </form>
-          </div>
-      </header>
-      <div id="activity-list">
-        <h2 class="title">Today's Activities</h2>
-        <ul>
-            <li>
-                <span class="name">Take Monique to School</span>
-                <span class="delete">delete</span>
-            </li>
-            <li>
-                <span class="name">Meet Akinyi for coffee</span>
-                <span class="delete">delete</span>
-            </li>
-            <li>
-                <span class="name">Read First day in love by Kui</span>
-                <span class="delete">delete</span>
-            </li>
-            <li>
-                <span class="name">Meet up with HR On next week Assignments
-                </span>
-                <span class="delete">delete</span>
-            </li>
-            <li>
-                <span class="name">Evening Work-out</span>
-                <span class="delete">delete</span>
-            </li>
-        </ul>
-    </div>
-    <!--create add activity form-->
-    <form id="add-activity">
-        <input type="checkbox" id="hide" />
-        <label for="hide">Hide Activities</label>
-	    	<input type="text" placeholder="Add an activity..." />
-	    	<button>Add</button>
-	    </form>
-        <!--Add text analyzer html-->
-	<div class="main">
-		<div><h2 class="main-header">How was your day?</h2>
-	     </div>
-		
-		<section class="main-input-comment">
-			<label for="comment">How was your day,accomplished your activities?:</label>
-			<textarea
-					name="comment"
-					id="comment"
-					class="main-comment-area"
-					placeholder="Your comment..."
-			>
-			</textarea>
-			<button class="main-analyze-button" onclick="onAnalyzeButtonClick()">Analyze...</button>
-		</section>
-		<section class="main-result">
-			<p id="main-result-block" class="main-result-block invisible">
-				<span>Result:</span>
-				<span id="result"></span>
-			</p>
-			<!--<button class="main-analyze-button" onclick="onAnalyzeButtonClick()">Analyze...</button>-->
-		</section>
-	</div>
-    <div id="tabbed-content">
-        <ul class="tabs">
-          <li data-target="#about" class="active">About</li>
-          <li data-target="#contact">Contact</li>
-        </ul>
-        <div class="panel active" id="about">
-          <p>Sandy</p>
-          <p>Sandy is a web app that provides a personal schedule and  daily activities manager  and also enables you tell it about your day and be able to analyze and reply with affirmations that makes it just the  friend you need for a step to better mental health </p>
-        </div>
-        <div class="panel" id="contact">
-          <p>For feedback or complaints</p>
-		  <a href="Byron Odhiambo">
-			<img src="/images/slack-svgrepo-com.svg" alt= slack style="width:42px;height:42px;">
-			</a>
-			<a href="byron.odhiambo@student.moringaschool.com">
-				<img src="/images/email-svgrepo-com (2).svg" alt="Email" style="width:50px;height:50px;">
-				</a>
-				<a href="https://mobile.twitter.com/Byronkodheck">
-					<img src="/images/twitter-svgrepo-com (1).svg" alt="twitter" style="width:50px;height:50px;">
-					</a>
-		
-        </div>
-		      </div>
-	     </div>
-  </body>
+		<div class="topbar">
+			<h1 class="logo">
+			  <img src="/public/imgs/logo.png"/><a href="#">GooDbOOK.junki</a>
+			</h1>
+		  </div>
+	    <header>
+	    	<div id="page-banner">
+	    		<h1 class="title">Plan and Search for books to Read</h1>
+          <P style="font-size:300%;">Search books from your currentread list</P>
+          <form id="search-books">
+            <input type="text" placeholder="Search books in current read..." />
+          </form>
+	    	</div>
+	    </header>
+        <div id="book-list">
+	    	<h1 class="title">currentRead list</h1>
+	    	<ul>
+	    		<li>
+	    			<span class="name">have you tried coffee?</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">Fear</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">First day in love</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">I dont find it weird at all
+					</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	
+	    	</ul>
+	    </div>
+        <form id="add-book">
+            <input type="checkbox" id="hide" />
+            <label for="hide">Hide all books</label>
+                <input type="text" placeholder="Add a currentread..." />
+                <button>Add</button>
+            </form>
+		<!--add the book search button-->
+	
+		  <div class="home-spacer">
+			<h1 class="page-title">Search for a book here </h1>
+	  
+			<form id="booksearch">
+			  <input name="query" type="text" placeholder="Search by; quote, text, or keywords">
+			</form>
+		  </div>
+		  <div class="bookmatch">
+		</div>
+		<div>
+			<footer>
+				<p>Designed by Byron Odhiambo 2022</p>
+			  </footer> 
+		</div>
+		    
+</body>
 </html>

@@ -1,0 +1,127 @@
+html {
+    height: 99%;
+    width: 99%;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(/public/imgs/chang-ye-HazMIZroH2E-unsplash.jpg);
+}
+
+body {
+    margin: 0 0 0 5;
+    margin-top: 0;
+    color: white;
+}
+
+.topbar {
+    background-color: #fff;
+    color: #222;
+}
+
+.topbar h1.logo {
+    margin: 0;
+    padding: 0x 0px;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+
+.topbar h1.logo a {
+    color: #e90d41;
+    text-decoration: none;
+}
+
+.topbar h1.logo img {
+    position: relative;
+    top: 9px;
+    width: 35px;
+    margin-right: 20px;
+}
+    
+h1.logo {
+    font-family: 'Slackey', cursive;
+    padding-left: 500px;
+}
+
+h1.page-title {
+    text-align: center;
+    font-size: 3.5em;
+}
+
+.home-spacer {
+    padding: 100px 20px 50px 20px;
+}
+
+.home-spacer form {
+    width: 100%;
+}
+
+input {
+    border-radius: 5px;
+    border: none;
+    padding: 10px 15px;
+    color: #000;
+    border: 2pt solid #e90d41;
+}
+
+input::placeholder {
+    color: #000;
+}
+
+input:focus {
+    outline: none;
+    border: 1pt solid #fff;
+}
+
+.home-spacer input {
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+    width: 100%;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+.home-spacer input:before, .home-spacer input:after {
+			       content: '"';
+			   }
+
+footer {
+    width: 100%;
+    text-align: center;
+    position:relative;
+    bottom: 0;
+    left: 0;
+    font-weight: 300;
+}
+
+a {
+    color: #fff
+}
+
+.loader {
+    margin: 0 auto;
+    border: 5px solid #fff; /* Light grey */
+    background-color: #333;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 2em;
+    width: 150px;
+    height: 200px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+.bookmatch {
+    text-align: center;
+}
+
+.bookmatch img {
+    border-radius: 10px;
+    width: 120px;
+    margin: 0 auto;
+    border: 3px solid #e90d41;
+}
